@@ -1,4 +1,4 @@
-# Pinky_Breast_Cancer_Detection
+# Pinky_Breast_Cancer_Detection 
 
 Breast cancer is a disease characterized by uncontrolled growth of cancer cells inside the breast. It can affect both men and women but is more common in women. It can spread to other parts of the body through blood or lymph vessels, a process known as metastasis. The causes of breast cancer are not fully understood, but factors such as hormones, lifestyle, environment, and genetic mutations play a role. Early detection greatly improves the chances of treatment success.
 
@@ -28,3 +28,5 @@ After the installations were successfuly done running, you're able to run the pr
 ```bash
 Python My_App.py
 ```
+
+@ By Bar Weizman & Lion Dahan, SCE, 2023
