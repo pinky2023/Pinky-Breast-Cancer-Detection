@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>About</title>
+     <link rel="icon" type="image/png" href="static/images/favicon.png">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/static/css/animate.css">
+     <link rel="stylesheet" href="/static/css/owl.carousel.css">
+     <link rel="stylesheet" href="/static/css/tooplate-style.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER
+     <header>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 col-sm-5">
+                         <p>Pinky Breast Cancer care</p>
+                    </div>
+               </div>
+          </div>
+     </header> -->
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Pinky care</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                         <li><a href="#" onclick="r1()" class="smoothScroll">Home</a></li>
+                         <li><a href="#" onclick="r7()" class="smoothScroll">Team</a> </li>
+                         <li><a href="#" onclick="r4()" class="smoothScroll">Donation</a> </li> 
+                         <li><a href="#" onclick="r5()" class="smoothScroll">Contact</a></li>
+                         {%if loggedIn!=True%}
+                         <li><a href="#" onclick="r1()" class="smoothScroll">Sign in</a></li>
+                         {%else%}
+                         <li><a href="#" onclick="r2()" class="smoothScroll">Logout</a></li>
+                         {%endif%}
+                         
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <!-- <section id="home" class="slider" data-stellar-background-ratio="0.5"> -->
+     <section id="home" style="background-color: pink;" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                        
+                                             <h1>  <img src="/static/images/logo.jpg" width="90" height="90"> </h1> 
+                                             <h1>Breast Cancer Detection</h1>
+                                             <h3>Cancer is no more danger</h3>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Know Your <i class="fa fa-h-square"></i>ealth Center Website</h2>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <p>Health Pinky Care is a commendable project that aims to bring faster breast cancer detection technology to mammograms, offer a knowledge and support portal, and conduct future research on the disease. This project was established with a personal touch, inspired by a family story, and is committed to raising awareness about breast cancer among women in Israel and worldwide.</p>
+                                   <p>Breast cancer is a major health concern that affects countless women globally. Early detection is crucial for successful treatment and recovery. Health Pinky Care's commitment to bringing faster detection technology to mammograms could help save lives by catching the disease at an earlier stage.</p>
+                                   <div>  
+                                        <a href="#" class="fa fa-lg fa-twitter-square"> Twitter</a> 
+                                   </div>
+                                   <div>  
+                                        <a href="#" class="fa fa-lg fa-twitter-square"> Twitter</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-info">
+                             <h2 class="wow fadeInUp" data-wow-delay="0.6s">Know About Breast Cancer Disease</h2>
+                             <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                  <p>Breast cancer is a common type of cancer that affects women around the world. It is estimated that one in eight women will develop breast cancer at some point in their lives. Breast cancer occurs when abnormal cells grow uncontrollably in the breast tissue, leading to the formation of a lump or mass.</p>
+                                  <p>Early detection of breast cancer is key to successful treatment and recovery. Women should perform regular breast self-exams and undergo mammography screenings as recommended by their healthcare provider. Common signs of breast cancer include a lump or thickening in the breast tissue, changes in the shape or size of the breast, nipple discharge or inversion, and skin changes such as redness or dimpling.</p>
+                             </div>
+                        </div>
+                   </div>                
+               </div>
+          </div>
+     </section> 
+
+
+     <section id="about">
+        <div class="container">
+             <div class="row">
+
+                  <div class="col-md-6 col-sm-6">
+                       <div class="about-info">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.6s">How to Use <i class="fa fa-h-square"></i>ealth Center Website</h2>
+                            <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                 <p>Mammography is an x-ray imaging method used to detect breast cancer and other breast diseases. During a mammogram, the breast is compressed and exposed to x-rays that produce an image, called a mammogram. Low-density tissues appear translucent while dense tissues like tumors appear whiter. Radiologists examine mammograms to identify abnormal regions that could represent cancerous tumors, benign tumors, fibroadenomas, or complex cysts. They look at the size, shape, contrast, and edges of the region, as well as for microcalcifications, which can indicate the presence of cancer.</p>
+                                 <p>Health Pinky Care provide you with an interface on which you can upload a mammogram and analyze the it for the presence of cancer in breast. These are the simple steps:</p>
+                                 <p>1. Login to Health Pinky Care website.</p>
+                                 <p>2. Upload the mammogram in the form on Home page.</p>
+                                 <p>3. Click on submit and gets the result.</p>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                      <div class="about-info">
+                           <h2 class="wow fadeInUp" data-wow-delay="0.6s">Understamd the  <i class="fa fa-h-square"></i>ealth Center Prediction Model</h2>
+                           <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                <p>Modern medical image processing techniques use algorithms and machine learning to analyze histopathology images captured by a microscope. Computer-aided mechanisms are applied to obtain better results as compared to manual pathological detection systems, which are tedious and prone to human error. Deep learning is extensively utilized in the medical imaging field, with a focus on binary classification problems to identify whether a tumor is benign or malignant. In deep learning algorithms, tasks involve image preprocessing, segmentation, feature extraction through a convolutional neural network (CNN), and classification using a fully connected network. Machine learning algorithms perform better than a human pathologist and provide more accurate results in medical image processing.</p>
+                           </div>
+                      </div>
+                 </div>                
+             </div>
+        </div>
+   </section> 
+
+
+   <section id="about">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-6 col-sm-6">
+                  <div class="about-info">
+                       <h2 class="wow fadeInUp" data-wow-delay="0.6s">Pictures and Graphs about Cancer</h2>
+                       <div class="wow fadeInUp" data-wow-delay="0.8s">
+                         <p>Here are some examples of mammograms having and not having breast cancer.</p>
+                       </div>
+                       <figure class="wow fadeInUp" data-wow-delay="1s">
+                         <figcaption>
+                              <h3>Mammograms of Healthy Breast Cell</h3>
+                         </figcaption>
+                         <img src="/static/images/healthy-breast.jpg" class="img-responsive" alt="">
+                       </figure>
+                       <figure class="wow fadeInUp" data-wow-delay="1s">
+                         <figcaption>
+                              <h3>Mammograms of Unhealthy Breast Cell</h3>
+                         </figcaption>
+                         <img src="/static/images/unhealthy-breast.jpg" class="img-responsive" alt="">
+                    </figure>
+                  </div>
+             </div>             
+         </div>
+    </div>
+</section> 
+
+     <!-- <section id="google-map">
+    
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>            -->
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>We are there to help you. Dont fear to contact us</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="/static/images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Amazing Technology</h5></a>
+                                        <span>March 08, 2018</span>
+                                   </div>
+                              </div>
+
+                               <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="/static/images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>New Healing Process</h5></a>
+                                        <span>February 20, 2018</span>
+                                   </div>
+                              </div> 
+                         </div>
+                    </div> -->
+
+                     <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div> 
+                         </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Other Social Sites</h4>
+                                   <p>Other Websites where you can</span></p>
+                                   <p>contact and know us.</span></p>
+                              </div> 
+
+                              <ul class="social-icon"></ul>
+                                <div>  <a href="#"  class="fa fa-facebook-square" attr="facebook icon"></a>
+                                   <a href="#" >facebook</a> 
+                              </div> 
+                                
+                                <div>  <a href="#" class="fa fa-twitter"></a>
+                                   <a href="#" >Twitter</a> 
+                              </div> 
+                                <div> <a href="#" class="fa fa-instagram"></a>
+                                   <a href="#" >Instagram</a> 
+                              </div> 
+                         </ul>
+                         </div>
+                    </div> 
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2013 Pinky Health Care
+                                   
+                                   </p>
+                              </div>
+                         </div>
+                         <!-- <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#">Laboratory Tests</a>
+                                   <a href="#">Departments</a>
+                                   <a href="#">Insurance Policy</a>
+                                   <a href="#">Careers</a>
+                              </div>
+                         </div> -->
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="/static/js/jquery.js"></script>
+     <script src="/static/js/bootstrap.min.js"></script>
+     <script src="/static/js/jquery.sticky.js"></script>
+     <script src="/static/js/jquery.stellar.min.js"></script>
+     <script src="/static/js/wow.min.js"></script>
+     <script src="/static/js/smoothscroll.js"></script>
+     <script src="/static/js/owl.carousel.min.js"></script>
+     <script src="/static/js/custom.js"></script>
+     <script src="/static/js/controls.js"></script>
+
+</body>
+</html>

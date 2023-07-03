@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <title>Pinky Breast Cancer Care</title>
+     <link rel="icon" type="image/png" href="static/images/favicon.png">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/static/css/animate.css">
+     <link rel="stylesheet" href="/static/css/owl.carousel.css">
+     <link rel="stylesheet" href="/static/css/tooplate-style.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+     <style>
+          small {
+               color: red;
+               margin-bottom: 2%;
+               text-emphasis: bold;
+               text-decoration: solid;
+               font-size: medium;
+               background-color: rgb(250, 215, 215);
+          }
+
+          label {
+               margin-top: 2%;
+               margin-bottom: 2%;
+          }
+     </style>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+
+          </div>
+     </section>
+
+
+     <!-- HEADER
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Pinky Breast Cancer care</p>
+                    </div>
+
+               </div>
+          </div>
+     </header> -->
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Pinky care</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+                         <li><a href="#" onclick="r1()" class="smoothScroll">Home</a></li>
+                         <li><a href="#" onclick="r7()" class="smoothScroll">Team</a> </li>
+                         <li><a href="#" onclick="r4()" class="smoothScroll">Donation</a> </li>
+                         <li><a href="#" onclick="r6()" class="smoothScroll">About</a></li>
+                         {%if loggedIn!=True%}
+                         <li><a href="#" onclick="r1()" class="smoothScroll">Sign in</a></li>
+                         {%else%}
+                         <li><a href="#" onclick="r2()" class="smoothScroll">Logout</a></li>
+                         {%endif%}
+
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <!-- <section id="home" class="slider" data-stellar-background-ratio="0.5"> -->
+     <section id="home" style="background-color: pink;" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="col-md-offset-1 col-md-10">
+                                        <h1>  <img src="/static/images/logo.jpg" width="90" height="90"> </h1> 
+                                             <h1>Breast Cancer Detection</h1>
+                                             <h3>Cancer is no more danger</h3>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+     <section id="appointment" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+
+                    <!-- <div class="col-md-6 col-sm-6">
+                       <img src="/static/images/appointment-image.jpg" class="img-responsive" alt="">
+                  </div> -->
+
+                    <div class="col-md-6 col-sm-6">
+                         <!-- CONTACT FORM HERE -->
+                         <form id="appointment-form" method="post">
+
+                              <!-- SECTION TITLE -->
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                   <h2>Contact Here</h2>
+                                   <h4>Fill up the form below if you have any queries or concerns. </h4>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" maxlength="20"
+                                             placeholder="Full Name">
+                                        <small style="margin-bottom:2%;" class="form-text text-muted"
+                                             id="n_message"></small>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                             placeholder="Your Email">
+                                        <small style="margin-bottom:2%;" class="form-text text-muted"
+                                             id="email_message"></small>
+                                   </div>
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <label for="telephone">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                             placeholder="Phone">
+                                             <small style="margin-bottom:2%;" class="form-text text-muted"
+                                             id="phone_message"></small><br>
+                                        <label for="Message"> Message</label>
+                                        <textarea class="form-control" maxlength="2000" rows="5" id="message"
+                                             name="message" placeholder="Message"></textarea>
+                                        <small style="margin-bottom:2%;" class="form-text text-muted"
+                                             id="message_message"></small>
+
+                                        <button style="background-color: pink;" type="submit" class="form-control"
+                                             id="cf-submit" name="submit">Submit Button</button>
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- <section id="google-map">
+    
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>            -->
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>We are there to help you. Dont fear to contact us</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Other Social Sites</h4>
+                                   <p>Other Websites where you can</span></p>
+                                   <p>contact and know us.</span></p>
+                              </div>
+
+                              <ul class="social-icon"></ul>
+                              <div> <a href="#" class="fa fa-facebook-square" attr="facebook icon"></a>
+                                   <a href="#">facebook</a>
+                              </div>
+
+                              <div> <a href="#" class="fa fa-twitter"></a>
+                                   <a href="#">Twitter</a>
+                              </div>
+                              <div> <a href="#" class="fa fa-instagram"></a>
+                                   <a href="#">Instagram</a>
+                              </div>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text">
+                                   <p>Copyright &copy; 2013 Pinky Health Care
+
+                                   </p>
+                              </div>
+                         </div>
+                         <!-- <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#">Laboratory Tests</a>
+                                   <a href="#">Departments</a>
+                                   <a href="#">Insurance Policy</a>
+                                   <a href="#">Careers</a>
+                              </div>
+                         </div> -->
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn">
+                                   <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i
+                                             class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="{{url_for('static', filename='contact.js')}}"></script>
+     <script src="/static/js/jquery.js"></script>
+     <script src="/static/js/bootstrap.min.js"></script>
+     <script src="/static/js/jquery.sticky.js"></script>
+     <script src="/static/js/jquery.stellar.min.js"></script>
+     <script src="/static/js/wow.min.js"></script>
+     <script src="/static/js/smoothscroll.js"></script>
+     <script src="/static/js/owl.carousel.min.js"></script>
+     <script src="/static/js/custom.js"></script>
+     <script src="/static/js/controls.js"></script>
+     <script src="static/contact.js"></script>
+
+
+</body>
+
+</html>

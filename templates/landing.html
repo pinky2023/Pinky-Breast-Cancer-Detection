@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+
+     <title> Login or Signup </title>
+     <link rel="icon" type="image/png" href="static/images/favicon.png">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/static/css/animate.css">
+     <link rel="stylesheet" href="/static/css/owl.carousel.css">
+     <link rel="stylesheet" href="/static/css/tooplate-style.css">
+     <link rel="stylesheet" href="/static/css/login.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <!--
+    
+      
+     <link rel="icon" href="{{url_for('static', filename='background.png')}}"> 
+    <script src="{{url_for('static', filename='landing.js')}}"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+-->
+     <link rel="stylesheet" href="static/landing.css">
+
+     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <!-- <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Pinky Breast Cancer care</p>
+                    </div>
+
+               </div>
+          </div>
+     </header> -->
+
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Pinky care</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#" onclick="r1()" class="smoothScroll">Home</a></li>
+                         <!--  <li><a href="#" onclick="r2()" class="smoothScroll">Sign in</a></li> -->
+                         <li><a href="#" onclick="r4()" class="smoothScroll">Donation</a> </li>
+                         <!-- <li><a href="#about" class="smoothScroll">Canser information</a></li> -->
+                         <li><a href="#" onclick="r5()" class="smoothScroll">Contact</a></li>
+                         <li><a href="#" onclick="r6()" class="smoothScroll">About</a></li>
+                         <li><a href="#" onclick="r7()" class="smoothScroll">Team</a></li>
+
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <section id="home" style="background-color: pink;" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="col-md-offset-1 col-md-10">
+                                        <h1>  <img src="/static/images/logo.jpg" width="90" height="90"> </h1> 
+                                             <h1>Breast Cancer Detection</h1>
+                                             <h3>Cancer is no more danger</h3>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <div class="container" style="background-color:#f29fc0; display: flex; justify-content: center !important;" id="container">
+          <div class="form-container sign-in-container">
+               <form method="POST">
+                    <h2>Sign in</h2>
+                    <input type="email" id="log_email" name="email" placeholder="Email">
+                    <div class="messages"> <small class="form-text text-muted" id="log_email_message"></small></div>
+                    <input type="password" id="password" name="Password" placeholder="Password">
+                    <i class="fa fa-eye" id="togglePasswordlog" style="margin-left: -18px; cursor: pointer;"></i>
+                    <div class="messages"> <small class="form-text text-muted"id="password_message"></small> </div>
+                    <a href="#" onclick="r3()" style="background-color: white ;color:  #c92d69 ;">Reset your password?</a>
+                    <button style="background-color: #c92d69 ;color:  white;" id="log_submit">Login</button>
+                    <p>OR</p>
+                    <button class="ghost signUpBtn" id="signUp" onclick="addToContainer()">Sign Up</button>
+               </form>
+          </div>
+          <div class="form-container sign-up-container">
+               <form method="POST">
+                    <h2>Sign Up</h2>
+                    <input type="text" id="fn" name="First-Name" placeholder="First Name" required>
+                    <input type="text" id="ln" name="Last-Name" placeholder="Last Name" required>
+                    <div class="messages"> <small class="form-text text-muted" id="n_message"></small></div>
+                    <input type="email" id="email" pattern=".+@globex\.com" name="email" placeholder=" Email:-someone@gmail.com">
+                    <div class="messages"> <small class="form-text text-muted" id="email_message"></small> </div>
+                    <input type="password" id="pass" name="Password" placeholder="Password">
+                    <i class="fa fa-eye" id="togglePassword" style="margin-left: -18px; cursor: pointer;"></i>
+                    <div class="messages"> <small class="form-text text-muted" id="pass_message"></small></div>
+                    <input type="password" id="cp" name="Confirm Password" placeholder="Confirm Password">
+                    <div class="messages"> <small class="form-text text-muted" id="cp_message"></small></div>
+                    <div style="margin-bottom:2%;"><input type="checkbox" onclick="Toggle()"> 
+                    <br>
+                    <strong>Agree To Terms and Conditions</strong></div>
+                    <button style="background-color:#c92d69 ;color:  white;" type="reset" value="Clear"> Clear </button>
+                    <button type="submit" style="background-color:#c92d69;color:  white;" id="submit">Submit Form</button>
+                    <p>OR</p>
+                    <button class="ghost loginBtn" id="signIn" onclick="removeFromContainer()">Sign In</button>
+               </form>
+          </div>
+     </div>
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>We are there to help you. Dont fear to contact us</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div>
+
+
+                         </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Other Social Sites</h4>
+                                   <p>Other Websites where you can</span></p>
+                                   <p>contact and know us.</span></p>
+                              </div>
+
+                              <ul class="social-icon"></ul>
+                              <div> <a href="#" class="fa fa-facebook-square" attr="facebook icon"></a>
+                                   <a href="#">facebook</a>
+                              </div>
+
+                              <div> <a href="#" class="fa fa-twitter"></a>
+                                   <a href="#">Twitter</a>
+                              </div>
+                              <div> <a href="#" class="fa fa-instagram"></a>
+                                   <a href="#">Instagram</a>
+                              </div>
+                              </ul>
+                         </div>
+                    </div>
+
+
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text">
+                                   <p>Copyright &copy; 2013 Pinky Health Care
+
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn">
+                                   <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i
+                                             class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+
+
+     <script src="{{url_for('static', filename='landing.js')}}"></script>
+
+     <script src="/static/js/jquery.js"></script>
+     <script src="/static/js/bootstrap.min.js"></script>
+     <script src="/static/js/jquery.sticky.js"></script>
+     <script src="/static/js/jquery.stellar.min.js"></script>
+     <script src="/static/js/wow.min.js"></script>
+     <script src="/static/js/smoothscroll.js"></script>
+     <script src="/static/js/owl.carousel.min.js"></script>
+     <script src="/static/js/custom.js"></script>
+     <script src="/static/js/controls.js"></script>
+</body>
+
+</html>

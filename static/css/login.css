@@ -1,0 +1,162 @@
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #c92d69;
+	background-color: #c92d69;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	margin: 5px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: block;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.form-container {
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+	margin-bottom: 2%;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+
+
+@media screen and (max-width: 840px) {
+	.mobile {
+		display: block;
+		margin: 5px !important;
+	}
+	.computer {display: none;}
+	.ghost {
+		border-radius: 20px;
+		border: 1px solid #c92d69;
+		background-color: #ffffff;
+		color: #c92d69;
+		font-size: 11px;
+		font-weight: bold;
+		padding: 12px 40px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: transform 80ms ease-in;
+	}
+	.sign-in-container {
+		left: 0;
+		width: 100%;
+	}
+	
+	.container .sign-in-container {
+		transform: translateX(0%);
+		opacity: 1;
+		z-index: 5;
+		animation: show 0.4s;
+	}
+	
+	.sign-up-container {
+		left: 0;
+		width: 100%;
+		
+	}
+	
+	.container .sign-up-container {
+		transform: translateX(0%);
+		opacity: 1;
+		z-index: 5;
+		animation: show 0.4s;
+	}
+	}
+
+@media screen and (min-width: 841px) {
+.mobile {display: none;}
+.computer {display: block;}
+.ghost {
+	border-radius: 20px;
+	border: 1px solid #c92d69;
+	background-color: #ffffff;
+	color: #c92d69;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 12px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+.sign-in-container {
+	left: 0;
+	width: 50%;
+}
+.container .sign-in-container {
+	transform: translateX(0%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.4s;
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	
+}
+
+.container .sign-up-container {
+	transform: translateX(0%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.4s;
+}
+}
